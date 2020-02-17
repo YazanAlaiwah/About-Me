@@ -7,23 +7,39 @@ h1 {
   font-size: 40px;
   font-weight: bold;
 }
+main div{
+    display: flex;
+}
 
 main div h2 {
   text-align: center;
+  display: flex;
   font-size: 30px;
   background: #0000ffd1;
-  padding: 5px;
   font-weight: bold;
+  width: 30vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
 }
-main div h3 {
+main div div h3 {
   text-align: center;
   font-size: 30px;
   background: #0000ff73;
-  padding: 5px;
+  padding: 67px;
   font-weight: bold;
 }
-main div p {
+main div div p {
   background: #0000ff9e;
   font-size: 18px;
-  padding: 20px;
+  padding: 150px;
+  font-weight: bold;
+}
+main div div{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    background-color: #ffc10775;;
+    padding: 40px;
 }

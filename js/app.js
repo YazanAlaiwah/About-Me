@@ -15,7 +15,7 @@ var age = prompt("are you younger then 25").toLowerCase();
 
 while (age != "yes" && age != "no") {
   age = prompt(
-    "your answer should be yes or no (do you like pubg)"
+    "your answer should be yes or no (are you younger then 25)"
   ).toLowerCase();
 }
 if (age === "yes") {
@@ -27,7 +27,7 @@ var food = prompt("do you like fast food").toLowerCase();
 
 while (food != "yes" && food != "no") {
   food = prompt(
-    "your answer should be yes or no (do you like pubg)"
+    "your answer should be yes or no (do you like fast food)"
   ).toLowerCase();
 }
 if (food === "yes") {
@@ -39,19 +39,19 @@ var job = prompt("are you in computer field").toLowerCase();
 
 while (job != "yes" && job != "no") {
   job = prompt(
-    "your answer should be yes or no (do you like pubg)"
+    "your answer should be yes or no (are you in computer field)"
   ).toLowerCase();
 }
 if (job === "yes") {
   alert("me too :)");
 } else {
-  alert("good job, I am develober");
+  alert("good job, I am developer");
 }
 var read = prompt("do you like reading").toLowerCase();
 
 while (read != "yes" && read != "no") {
   read = prompt(
-    "your answer should be yes or no (do you like pubg)"
+    "your answer should be yes or no (do you like reading)"
   ).toLowerCase();
 }
 if (read === "yes") {
