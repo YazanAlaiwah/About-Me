@@ -32,7 +32,7 @@ main div div h3 {
 main div div p {
   background: #0000ff9e;
   font-size: 18px;
-  padding: 150px;
+  padding: 142px;
   font-weight: bold;
 }
 main div div {
@@ -43,3 +43,12 @@ footer {
   background-color: #ffc10775;
   padding: 40px;
 }
+
+#top-ten{
+  background: #0000ffc2;
+    padding: 34px;
+    font-size: 18px;
+    color: ivory;
+    line-height: initial;
+}
+

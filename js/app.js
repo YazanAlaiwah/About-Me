@@ -1,61 +1,77 @@
 'use strict';
-var pubg = prompt('do you like pubg').toLowerCase();
+var grade = 0;
+var question = prompt('are my mobile samsung').toLowerCase();
 
-while (pubg !== 'yes' && pubg !== 'no' && pubg !== 'y' && pubg !== 'n') {
-  pubg = prompt(
-    'your answer should be yes or no (do you like pubg)'
-  ).toLowerCase();
-}
-if (pubg === 'yes' || pubg === 'y') {
-  alert('me too :)');
-} else {
-  alert('unfortunately i like it');
-}
-var age = prompt('are you younger then 25').toLowerCase();
+question === 'yes' || question === 'y' ? grade++ : null;
 
-while (age !== 'yes' && age !== 'no' && age !== 'y' && age !== 'n') {
-  age = prompt(
-    'your answer should be yes or no (are you younger then 25)'
-  ).toLowerCase();
-}
-if (age === 'yes' || age === 'y') {
-  alert('me too :)');
-} else {
-  alert('you are bigger then me');
-}
-var food = prompt('do you like fast food').toLowerCase();
+question = prompt('do i study software engneer in university').toLowerCase();
 
-while (food !== 'yes' && food !== 'no' && food !== 'y' && food !== 'n') {
-  food = prompt(
-    'your answer should be yes or no (do you like fast food)'
-  ).toLowerCase();
-}
-if (food === 'yes' || food === 'y') {
-  alert('me too :)');
-} else {
-  alert('unfortunately i like it');
-}
-var job = prompt('are you in computer field').toLowerCase();
+question === 'no' || question === 'n' ? grade++ : null;
 
-while (job !== 'yes' && job !== 'no' && job !== 'y' && job !== 'n') {
-  job = prompt(
-    'your answer should be yes or no (are you in computer field)'
-  ).toLowerCase();
-}
-if (job === 'yes' || job === 'y') {
-  alert('me too :)');
-} else {
-  alert('good job, I am developer');
-}
-var read = prompt('do you like reading').toLowerCase();
+question = prompt('do i love mansaf').toLowerCase();
 
-while (read !== 'yes' && read !== 'no' && read !== 'y' && read !== 'n') {
-  read = prompt(
-    'your answer should be yes or no (do you like reading)'
-  ).toLowerCase();
+question === 'yes' || question === 'y' ? grade++ : null;
+
+question = prompt('do i love developer').toLowerCase();
+
+question === 'yes' || question === 'y' ? grade++ : null;
+
+question = prompt('do i love the TAs').toLowerCase();
+question === 'yes' || question === 'y' ? grade++ : null;
+
+var age = prompt('how old I am you have 4 chansses');
+var count = 1;
+do {
+  if (age == 24) {
+    console.log('jlklj');
+    alert("yes I'm 24 years old");
+    grade++;
+    break;
+  } else if (age < 24) {
+    if (age < 22) {
+      age = prompt('ops to low guss again');
+    } else {
+      age = prompt('almost there up a little');
+    }
+  } else if (age > 24) {
+    if (age > 26) {
+      age = prompt('ops to high guss again');
+    } else {
+      age = prompt('almost there dowwn a little');
+    }
+  }
+  if (count === 3) {
+    alert('sorry you finsh your gisses I am 24 years old');
+  }
+  console.log(count);
+  count++;
+} while (count !== 4);
+
+var array = ['kfc', 'burger king', 'pizza hut', 'mcdonalds'];
+var restrunt = prompt('guss one of my faverot restaurants').toLowerCase();
+var count2 = 7;
+
+while (!(array.indexOf(restrunt) + 1)) {
+  if (count2 === 0) {
+    alert(
+      'sorry you didnt answer here is my best restrunt here is my best restrunts'
+    );
+    for (let i = 0; i < array.length; i++) {
+      alert(array[i]);
+    }
+    grade++;
+    break;
+  }
+  restrunt = prompt(`Ops not crocet try again you have ${count2} gusses`);
+  console.log(array.indexOf(restrunt) + 1)
+  if (array.indexOf(restrunt) + 1) {
+    array.splice(array.indexOf(restrunt),1)
+    console.log('sdf')
+    alert(`good yes I love ${restrunt} and also love ${array.join(' and ')}`); 
+    
+    grade++;
+    break;
+  }
+  count2--;
 }
-if (read === 'yes' || read === 'y') {
-  alert('me too :)');
-} else {
-  alert('i like it its good you should try it');
-}
+alert(`you grade is ${grade} of 7`);
