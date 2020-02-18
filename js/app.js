@@ -50,8 +50,13 @@ do {
 var array = ['kfc', 'burger king', 'pizza hut', 'mcdonalds'];
 var restrunt = prompt('guss one of my faverot restaurants').toLowerCase();
 var count2 = 7;
-
-while (!(array.indexOf(restrunt) + 1)) {
+var boolen = -1
+do {
+  for(var i = 0;i < array.length;i++){
+    if(restrunt === array[i]){
+      boolen = i
+    }
+  }
   if (count2 === 0) {
     alert(
       'sorry you didnt answer here is my best restrunt here is my best restrunts'
@@ -62,16 +67,38 @@ while (!(array.indexOf(restrunt) + 1)) {
     grade++;
     break;
   }
-  restrunt = prompt(`Ops not crocet try again you have ${count2} gusses`);
-  console.log(array.indexOf(restrunt) + 1)
-  if (array.indexOf(restrunt) + 1) {
-    array.splice(array.indexOf(restrunt),1)
-    console.log('sdf')
-    alert(`good yes I love ${restrunt} and also love ${array.join(' and ')}`); 
-    
+  if (boolen + 1) {
+    array.splice(boolen, 1);
+    console.log('sdf');
+    alert(`good yes I love ${restrunt} and also love ${array.join(' and ')}`);
+
     grade++;
     break;
+  } else {
+    restrunt = prompt(`Ops not crocet try again you have ${count2} gusses`);
   }
   count2--;
-}
+} while (!(boolen + 1));
+//  {
+//   if (count2 === 0) {
+//     alert(
+//       'sorry you didnt answer here is my best restrunt here is my best restrunts'
+//     );
+//     for (let i = 0; i < array.length; i++) {
+//       alert(array[i]);
+//     }
+//     grade++;
+//     break;
+//   }
+//   restrunt = prompt(`Ops not crocet try again you have ${count2} gusseboolen + 1);
+//   if (array.indexOf(restrunt) + 1) {
+//     array.splice(array.indexOf(restrunt), 1);
+//     console.log('sdf');
+//     alert(`good yes I love ${restrunt} and also love ${array.join(' and ')}`);
+
+//     grade++;
+//     break;
+//   }
+//   count2--;
+// }
 alert(`you grade is ${grade} of 7`);
