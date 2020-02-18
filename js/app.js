@@ -1,7 +1,7 @@
 'use strict';
 var pubg = prompt('do you like pubg').toLowerCase();
 
-while (pubg != 'yes' && pubg != 'no' && pubg != 'y' && pubg != 'n') {
+while (pubg !== 'yes' && pubg !== 'no' && pubg !== 'y' && pubg !== 'n') {
   pubg = prompt(
     'your answer should be yes or no (do you like pubg)'
   ).toLowerCase();
@@ -13,7 +13,7 @@ if (pubg === 'yes' || pubg === 'y') {
 }
 var age = prompt('are you younger then 25').toLowerCase();
 
-while (age != 'yes' && age != 'no' && age != 'y' && age != 'n') {
+while (age !== 'yes' && age !== 'no' && age !== 'y' && age !== 'n') {
   age = prompt(
     'your answer should be yes or no (are you younger then 25)'
   ).toLowerCase();
@@ -25,7 +25,7 @@ if (age === 'yes' || age === 'y') {
 }
 var food = prompt('do you like fast food').toLowerCase();
 
-while (food != 'yes' && food != 'no' && food != 'y' && food != 'n') {
+while (food !== 'yes' && food !== 'no' && food !== 'y' && food !== 'n') {
   food = prompt(
     'your answer should be yes or no (do you like fast food)'
   ).toLowerCase();
@@ -37,7 +37,7 @@ if (food === 'yes' || food === 'y') {
 }
 var job = prompt('are you in computer field').toLowerCase();
 
-while (job != 'yes' && job != 'no' && job != 'y' && job != 'n') {
+while (job !== 'yes' && job !== 'no' && job !== 'y' && job !== 'n') {
   job = prompt(
     'your answer should be yes or no (are you in computer field)'
   ).toLowerCase();
@@ -49,7 +49,7 @@ if (job === 'yes' || job === 'y') {
 }
 var read = prompt('do you like reading').toLowerCase();
 
-while (read != 'yes' && read != 'no' && read != 'y' && read != 'n') {
+while (read !== 'yes' && read !== 'no' && read !== 'y' && read !== 'n') {
   read = prompt(
     'your answer should be yes or no (do you like reading)'
   ).toLowerCase();
