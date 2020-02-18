@@ -20,7 +20,7 @@ question = prompt('do i love the TAs').toLowerCase();
 question === 'yes' || question === 'y' ? grade++ : null;
 
 var age = prompt('how old I am you have 4 chansses');
-var count = 1;
+var count = 0;
 do {
   if (age == 24) {
     console.log('jlklj');
